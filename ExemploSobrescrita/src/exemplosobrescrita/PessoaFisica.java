@@ -26,6 +26,12 @@ public class PessoaFisica extends Pessoa{
     public String imprimir() {
         return "Nome: " + nome +"\nCPF: " + cpf+ "\n" + super.imprimir(); 
     }
+
+    @Override
+    public String toString() {
+        return imprimir();
+    }
+    
     
     
 

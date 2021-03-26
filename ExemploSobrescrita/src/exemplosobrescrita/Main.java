@@ -18,6 +18,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+                
         ArrayList<Pessoa> listPessoa = new ArrayList<>();
         int opc = 0;
         String nome, doc, email, celular;
@@ -42,7 +43,7 @@ public class Main {
                 case 3:
                         String msg ="";
                         for(Pessoa p : listPessoa){
-                            msg += p.imprimir() +"\n---\n";
+                            msg += p +"\n---\n";
                         }
                         JOptionPane.showMessageDialog(null, msg);
                      break;

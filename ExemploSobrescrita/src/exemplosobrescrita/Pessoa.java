@@ -25,6 +25,12 @@ public class Pessoa {
         return "E-mail: " + email + "\nCelular: " + celular;
     }
 
+    @Override
+    public String toString() {
+        return imprimir();
+    }
+    
+
     public String getEmail() {
         return email;
     }

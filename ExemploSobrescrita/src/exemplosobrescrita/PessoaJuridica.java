@@ -26,6 +26,11 @@ public class PessoaJuridica extends Pessoa{
     public String imprimir() {
         return "Razão: " + razao + "\nCNPJ: " + cnpj + "\n" + super.imprimir(); 
     }
+
+    @Override
+    public String toString() {
+        return imprimir();
+    }
     
     
 
